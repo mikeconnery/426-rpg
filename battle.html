@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>426-rpg</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-firestore.js"></script>
+
+
+	<script>
+		var firebaseConfig = {
+    	apiKey: "AIzaSyDFScp4vBMv9IdPXczxgSKWcndctiR8Suw",
+    	authDomain: "project-426-47aee.firebaseapp.com",
+    	projectId: "project-426-47aee",
+    	storageBucket: "project-426-47aee.appspot.com",
+    	messagingSenderId: "966248485814",
+    	appId: "1:966248485814:web:35e813d90f0ed022e46717",
+    	measurementId: "G-WPXKBSWE0T"
+  		};
+  		// Initialize Firebase
+  		firebase.initializeApp(firebaseConfig);
+
+  		const db = firebase.firestore();
+  		db.settings({ timestampInSnapshots: true });
+
+		  const auth = firebase.auth()
+  
+	</script>
+		<script src="js/form.js"></script>
+        <script src="js/battle.js"></script>
+    </head>
+    <body>
+        <div class='container' id='main'>
+
+            <div id='battlespace'>
+
+                <div id='playerhealth'>
+                    Your HP: 100/100
+                </div>
+                <div id='slimehealth'>
+                    Opponent's HP: 20/20
+                </div>
+                <img id='battleslime' src='assets/slime.png'>
+                <div id= 'battlebox'>
+                    <p id='battlemessage'>A slime approaches!</p>
+                </div>
+            </div>
+
+            <br><br>
+            <button onclick=battleTurn() id='attackbutton'>Attack</button>
+
+
+        </div>
+    </body>
+</html>

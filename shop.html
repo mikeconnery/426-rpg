@@ -1,0 +1,108 @@
+<html>
+<head>
+	<title>Shops</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-firestore.js"></script>
+
+	<script>
+		var firebaseConfig = {
+    	apiKey: "AIzaSyDFScp4vBMv9IdPXczxgSKWcndctiR8Suw",
+    	authDomain: "project-426-47aee.firebaseapp.com",
+    	projectId: "project-426-47aee",
+    	storageBucket: "project-426-47aee.appspot.com",
+    	messagingSenderId: "966248485814",
+    	appId: "1:966248485814:web:35e813d90f0ed022e46717",
+    	measurementId: "G-WPXKBSWE0T"
+  		};
+  		// Initialize Firebase
+  		firebase.initializeApp(firebaseConfig);
+
+  		const db = firebase.firestore();
+  		db.settings({ timestampInSnapshots: true });
+
+		  const auth = firebase.auth()
+  
+	</script>
+		<script src="js/form.js"></script>
+        <script src="js/shop.js"></script>
+</head>
+
+<body>
+
+<div class="container" id ="banner">
+    <img src="assets/banner.png">
+</div>
+
+<div id="sidebar">
+    
+    <nav id="lsb">
+        <ul id="lsblist">
+            <li><h1>General</h1></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a class="nyi" href="#">Staff</a></li>
+            <li><a class="nyi" href="#">News</a></li>
+            <li><a href="daily.html">Daily Reward</a></li>
+
+            <li><h1>Account</h1></li>
+            <li><a href="profile.html">Your Profile</a></li>
+            <li><a class="nyi" href="#">Titles</a></li>
+            <li><a href="#" onclick=signOut()>Logout</a></li>
+
+            <li><h1>Explore</h1></li>
+            <li><a href="field.html">I - Fields</a></li>
+            <li><a href="forest.html">II - Forest</a></li>
+            <li><a href="cave.html">III - Cave</a></li>
+            <li><a href="volcano.html">IV - Volcano</a></li>
+            <li><a href="void.html">V - ???</a></li>
+        </ul>
+    </nav>
+
+    <nav id="rsb">
+        <ul>
+            <li><h1>Social</h1></li>
+            <li><a class="nyi" href="#">Messages</a></li>
+            <li><a class="nyi" href="#">Friends</a></li>
+            <li><a class="nyi" href="#">Trade</a></li>
+            <li><a class="nyi" href="#">Forums</a></li>
+            <li><a class="nyi" href="#">Find Player</a></li>
+            <li><a class="nyi" href="#">Leaderboards</a></li>
+            <li><a class="nyi" href="#">Referrals</a></li>
+
+            <li><h1>Items</h1></li>
+            <li><a href="storage.html">Storage</a></li>
+            <li><a class="nyi" href="#">Craft</a></li>
+            <li><a class="nyi" href="#">Database</a></li>
+
+            <li><h1>Economy</h1></li>
+            <li><a class="nyi" href="#">Buy Items</a></li>
+            <li><a class="nyi" href="#">Sell Items</a></li>
+			<li><a href="shop.html">Shops</a></li>
+			<li><a href="gamble.html">Gamble</a></li>
+			<li><a href="donate.html">Donate</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="container" id="main">
+    <div id="searcharea">
+        <h1 >Shop</h1>
+        <br><br>
+        <img id="dailychest" src="assets/merch.png">
+        <br><br>
+        <h2 id="dailymessage">Buy whatever you like!</h2>
+        <br>
+        <button onclick=showShop()>Show Shop</button>
+
+        <ul id="itemlist">
+
+        </ul>
+
+        <br><br>
+    </div>
+</div>
+
+</body>
+</html>

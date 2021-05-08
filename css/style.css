@@ -1,0 +1,358 @@
+@font-face {
+	src: url(assets/GlitchLight-j2EM.tff);
+	font-family: glitch;
+}
+
+body {
+	background-color:#6e737a;
+	color:#fff;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	line-height:1.6em;
+	margin:0;
+	margin-bottom: 1000px;
+}
+
+li {
+	list-style:none;
+	font-family: glitch
+}
+
+#banner img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    margin-bottom:20px;
+    margin-top: 10px;
+    border:solid;
+    border-color: white;
+    border-radius: 4px;
+ }
+
+.container {
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+	text-align: center;;
+}
+
+
+
+#sidebar a{
+	color:white;
+	text-decoration:none;
+}
+
+#sidebar h1{
+	font-size: 16px;
+}
+
+#lsb {
+	background-image:linear-gradient(to left, #6a6b6b, #3b3b3b);
+	text-align:left;
+	float:left;
+	border:solid;
+	border-radius:5px;
+	width:150px;
+	margin-left: 10px;
+}
+
+#lsb ul {
+	padding:0;
+}
+
+#lsb h1 {
+	border:solid;
+	border-left:none;
+	border-right:none;
+	width:100%;
+	margin:10px 0;
+}
+
+#rsb {
+	background-image:linear-gradient(to right, #6a6b6b, #3b3b3b);
+	text-align:left;
+	float:right;
+	border:solid;
+	border-radius:5px;
+	width: 150px;
+	margin-right: 10px
+}
+
+#rsb ul {
+	padding:0;
+}
+
+#rsb h1 {
+	border:solid;
+	width:100%;
+	border-left:none;
+	border-right:none;
+	margin:10px 0;
+}
+
+
+#main {
+	width:65%;
+
+	background-color:gray;
+	border:solid;
+	border-color: white;
+	border-radius: 4px;
+}
+
+
+#areatitle {
+
+	font-size: 24px;
+	
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-left:30%;
+	padding-right:30%;
+	margin-bottom: 0;
+
+
+}
+
+.chancesshowcase {
+
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-left:30%;
+	padding-right:30%;
+	background-color: darkgray;
+	border:solid;
+}
+
+.chancesshowcase h1 {
+	font-size: 14px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+@media (max-width: 1000px) {
+    #sidebar {
+        display: none;
+    }
+}
+
+.areadisplay {
+	width: 40%
+}
+
+#searchbuttons {
+	display: inline-block;
+	width: 30%
+}
+
+.buttoncontainer {
+	display:inline-block;
+	width: 30%;
+	height: 30%;
+}
+
+#button1 {
+	display:inline-block;
+}
+
+#button2 {
+	display: inline-block;
+}
+
+#button3 {
+	display: inline-block;
+}
+
+.searchbutton{
+	display: inline-block;
+}
+
+.noSelect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#weaponchoice {
+	display: inline-block;
+}
+
+.choice {
+	width: 30%;
+	display: inline-block;
+}
+
+h1 {
+	font-family: glitch;
+}
+
+h2 {
+	font-family: glitch;
+}
+
+.storageItem {
+	display:inline-block;
+	border-style: solid;
+	width: 80%;
+	
+}
+
+.storageImage {
+	width: 10%;
+	float: left;
+	padding: 3%;
+
+}
+
+.storageStats {
+	float:right;
+	padding-right: 5%
+}
+
+.storageName {
+	float:right;
+	padding-right: 5%;
+}
+
+.storageDesc {
+	float:right;
+}
+
+.equipButton {
+	float:center;
+	margin-top: 5%;
+	margin-bottom: 5%
+}
+
+.gearbox {
+	width: 5vw;
+	height: 5vw;
+	border: solid
+}
+
+#headslot{
+	margin: auto;
+	display:block;
+}
+
+#headslotlogo{
+	width: 4vw;
+	height: 4vw;
+}
+
+#gloveslot{
+	margin:auto;
+	display:inline-block;
+}
+
+#gloveslotlogo{
+	width: 4vw;
+	height: 4vw;
+}
+
+#bodyslot{
+	margin:auto;
+	display:inline-block;
+}
+
+#bodyslotlogo{
+	width: 4vw;
+	height: 4vw;
+}
+
+#ringslot{
+	margin:auto;
+	display:inline-block;
+}
+
+#ringslotlogo{
+	width: 4vw;
+	height: 4vw;
+}
+
+#weapslot{
+	margin:auto;
+	display:inline-block;
+}
+
+#weapslotlogo{
+	width: 4vw;
+	height: 4vw;
+}
+
+#legslot{
+	margin:auto;
+	display:block;
+}
+
+#legslotlogo{
+	width: 4vw;
+	height: 4vw;
+}
+
+#bootslot{
+	margin:auto;
+	display:block;
+}
+
+#bootslotlogo{
+	width: 4vw;
+	height: 4vw;
+}
+
+.nyi{
+	color: dimgrey !important;
+}
+
+#dailychest {
+	width: 20%
+}
+
+#slimePic{
+	width:20%
+}
+
+#battlespace{
+	margin-left: 10%;
+	margin-right: 10%;
+
+	background-color: darkgray;
+	border:solid;
+}
+
+#battleslime{
+	width: 10%;
+	padding-top: 7%;
+	
+}
+
+#battlebox{
+	border: solid;
+	background-color: white;
+	border-color: black;
+	height: 100px;
+	padding-top: 5%;
+	color: black;
+}
+
+#playerhealth{
+	float:left;
+	color: red;
+}
+
+#slimehealth{
+	float:right;
+	color:green;
+}
+
+#attackbutton{
+	margin-bottom: 5%;
+}
+
+#venmo{
+	width: 20%;
+}
